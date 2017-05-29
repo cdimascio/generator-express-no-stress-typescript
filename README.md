@@ -1,20 +1,22 @@
-# generator-express-no-stress
+# generator-express-no-stress-typescript
 
-Create awesome [Express.js](www.expressjs.com) applications with best of breed tech including ES.next via [Babel.js](https://babeljs.io/), structured logging with [Bunyan](https://github.com/trentm/node-bunyan), API validation and interactive documentation via [Swagger](http://swagger.io/), environment based config with [dotenv](https://github.com/motdotla/dotenv), and [Backpack](https://github.com/palmerhq/backpack) powered builds. 
+Typescript variant of [generator-express-no-stress](https://github.com/cdimascio/generator-express-no-stress)
 
-generator-express-no-stress gets you up and running in seconds. It's ridiculously easy to configure. Heck, just take the defaults. Start it. Write code.
+Create awesome [Express.js](www.expressjs.com) applications with best of breed tech including [Typescipt](https://www.typescriptlang.org/), structured logging with [Bunyan](https://github.com/trentm/node-bunyan), API validation and interactive documentation via [Swagger](http://swagger.io/), environment based config with [dotenv](https://github.com/motdotla/dotenv), and [Backpack](https://github.com/palmerhq/backpack) powered builds. 
+
+generator-express-no-stress-typescript gets you up and running in seconds. It's ridiculously easy to configure. Heck, just take the defaults. Start it. Write code.
 
 This generator scaffolds a fully functioning REST API server complete with interactive documentation, API validation, structured logging, environment driven config, and more. Simply run the generator and smile :-D
 
-![](https://github.com/cdimascio/generator-express-no-stress/raw/master/assets/swagger_node.jpeg)
+![](https://github.com/cdimascio/generator-express-no-stress-typescript/raw/master/assets/typescript.png)![](https://github.com/cdimascio/generator-express-no-stress-typescript/raw/master/assets/swagger_node.jpeg)
 
 ## Install
 
-`npm install -g yo generator-express-no-stress`
+`npm install -g yo generator-express-no-stress-typescript`
 
 ## Scaffold
 
-`yo express-no-stress myapp`
+`yo express-no-stress-typescript myapp`
 
 ## Run
 #### Run in *development* mode:
@@ -46,7 +48,7 @@ cf push myapp
 
 ```
 # scaffold
-yo express-no-stress myapp --yarn 
+yo express-no-stress-typescript myapp --yarn 
 
 # start
 cd myapp
@@ -56,9 +58,9 @@ npm start
 
 ## What you get!
 
+- [Typescript](https://www.typescriptlang.org/) - Typescript is a typed superset of JavaScript that compiles to plain JavaScript 
 - [Express.js](www.expressjs.com) - Fast, unopinionated
 , minimalist web framework for Node.js
-- [Babel.js](https://babeljs.io/) - Use new syntax, right now without waiting for support
 - [Bunyan](https://github.com/trentm/node-bunyan) - a simple and fast JSON logging module for node.js services
 - [dotenv](https://github.com/motdotla/dotenv) - Loads environment variables from .env for nodejs projects
 - [Backpack](https://github.com/palmerhq/backpack) -  a minimalistic build system for Node.js projects.
@@ -73,13 +75,13 @@ Simply describe your APIs with Swagger and automagically get for free:
 - API validation
 
 #### Interactive API Doc
-![](https://github.com/cdimascio/generator-express-no-stress/raw/master/assets/interactive-doc1.png)
+![](https://github.com/cdimascio/generator-express-no-stress-typescript/raw/master/assets/interactive-doc1.png)
 
 
 #### API Validation!
 Oops! I the API caller forgot to pass a `name` field, no stress, we've got this!
 
-![](https://github.com/cdimascio/generator-express-no-stress/raw/master/assets/api-validation.png)
+![](https://github.com/cdimascio/generator-express-no-stress-typescript/raw/master/assets/api-validation.png)
 
 
 ### Structured Logging
@@ -88,13 +90,13 @@ Structured logging out of the box!
 
 #### raw
 
-![](https://github.com/cdimascio/generator-express-no-stress/raw/master/assets/logging-raw.png)
+![](https://github.com/cdimascio/generator-express-no-stress-typescript/raw/master/assets/logging-raw.png)
 
 #### pretty
 
 Structured logging pretty printed by default - great for dev!
 
-![](https://github.com/cdimascio/generator-express-no-stress/raw/master/assets/logging-pretty.png)
+![](https://github.com/cdimascio/generator-express-no-stress-typescript/raw/master/assets/logging-pretty.png)
 
 ### API Validation Example
 
@@ -177,7 +179,7 @@ paths:
 
 #### Invoke a POST request via the Interactive doc
 
-![](https://github.com/cdimascio/generator-express-no-stress/raw/master/assets/interactive-doc.png)
+![](https://github.com/cdimascio/generator-express-no-stress-typescript/raw/master/assets/interactive-doc.png)
 
 
 
