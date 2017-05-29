@@ -19,6 +19,8 @@ This generator scaffolds a fully functioning REST API server complete with inter
 
 `yo express-no-stress-typescript myapp`
 
+**Note:** *You may also [use Yarn](#use-yarn)*
+
 ## Run
 #### Run in *development* mode:
 
