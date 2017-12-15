@@ -45,8 +45,9 @@ cf push myapp
 ```
 # Try it!
 
-- Interactive API doc at [http://localhost:3000/api](http://localhost:3000/api)
-- Static resources at [http://localhost:3000/api](http://localhost:3000/api)
+- Static resources at [http://localhost:3000](http://localhost:3000)
+
+- Interactive API doc at [http://localhost:3000/api-explorer](http://localhost:3000/api-explorer)
 
 ## Use Yarn
 
