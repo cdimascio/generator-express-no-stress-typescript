@@ -6,12 +6,8 @@ import * as http from 'http';
 import * as os from 'os';
 import * as cookieParser from 'cookie-parser';
 import swaggerify from './swagger';
-import * as bunyan from 'bunyan';
+import l from './logger';
 
-const l = bunyan.createLogger({
-  name: process.env.APP_ID,
-  level: process.env.LOG_LEVEL
-});
 const app = express();
 
 export default class ExpressServer {
@@ -29,7 +25,7 @@ export default class ExpressServer {
     return this;
   }
 
-  listen(port: number = process.env.PORT): Application {
+  listen(port: number = parseInt(process.env.PORT)): Application {
     const welcome = port => () => l.info(`up and running in ${process.env.NODE_ENV || 'development'} @: ${os.hostname() } on port: ${port}}`);
     http.createServer(app).listen(port, welcome(port));
     return app;

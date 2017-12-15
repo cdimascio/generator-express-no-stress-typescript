@@ -68,7 +68,7 @@ module.exports = class extends Generator {
           'server/routes.ts',
           '.env',
           'server/common/swagger/Api.yaml',
-          'public/api/index.html',
+          'public/api-explorer/index.html',
           'public/index.html',
         ];
 

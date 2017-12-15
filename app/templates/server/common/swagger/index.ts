@@ -12,7 +12,7 @@ export default function (app: Application, routes: (app: Application) => void) {
 
     app.use(middleware.metadata());
     app.use(middleware.files(app, {
-      apiPath: process.env.SWAGGER_API_DOCS_ROOT,
+      apiPath: process.env.SWAGGER_API_SPEC,
     }));
 
     app.use(middleware.parseRequest({
