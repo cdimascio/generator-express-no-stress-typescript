@@ -2,7 +2,7 @@
 
 Typescript variant of [generator-express-no-stress](https://github.com/cdimascio/generator-express-no-stress)
 
-Create awesome [Express.js](www.expressjs.com) applications with best of breed tech including [Typescipt](https://www.typescriptlang.org/), structured logging with [Bunyan](https://github.com/trentm/node-bunyan), API validation and interactive documentation via [Swagger](http://swagger.io/), environment based config with [dotenv](https://github.com/motdotla/dotenv), and [Backpack](https://github.com/palmerhq/backpack) powered builds. 
+Create awesome [Express.js](www.expressjs.com) applications with best of breed tech including [Typescipt](https://www.typescriptlang.org/), structured logging with [Pino](https://github.com/pinojs/pino), API validation and interactive documentation via [Swagger](http://swagger.io/), environment based config with [dotenv](https://github.com/motdotla/dotenv), and [Backpack](https://github.com/palmerhq/backpack) powered builds. 
 
 ![](https://raw.githubusercontent.com/cdimascio/generator-express-no-stress-typescript/master/assets/typescript.png)![](https://github.com/cdimascio/generator-express-no-stress-typescript/raw/master/assets/swagger_node.jpeg)
 
@@ -66,7 +66,7 @@ npm start
 - [Typescript](https://www.typescriptlang.org/) - Typescript is a typed superset of JavaScript that compiles to plain JavaScript 
 - [Express.js](www.expressjs.com) - Fast, unopinionated
 , minimalist web framework for Node.js
-- [Bunyan](https://github.com/trentm/node-bunyan) - a simple and fast JSON logging module for node.js services
+- [Pino](https://github.com/pinojs/pino) - Extremely fast node.js logger, inspired by Bunyan. It also includes a shell utility to pretty-print its log files
 - [dotenv](https://github.com/motdotla/dotenv) - Loads environment variables from .env for nodejs projects
 - [Backpack](https://github.com/palmerhq/backpack) -  a minimalistic build system for Node.js projects.
 - [Swagger](http://swagger.io/) - is a simple yet powerful representation of your RESTful API.
