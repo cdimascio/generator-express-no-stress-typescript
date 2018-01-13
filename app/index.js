@@ -70,6 +70,7 @@ module.exports = class extends Generator {
           'server/common/swagger/Api.yaml',
           'public/api-explorer/index.html',
           'public/index.html',
+          'gitignore'
         ];
 
         this.fs.copy(src, dest)
@@ -91,6 +92,11 @@ module.exports = class extends Generator {
             this.templatePath(f),
             this.destinationPath(`${this.name}/${f}`), opts);
         });
+
+        this.fs.move(
+          this.destinationPath(`${this.name}`, 'gitignore'),
+          this.destinationPath(`${this.name}`, '.gitignore')
+        );
       }
     }
   }
