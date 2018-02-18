@@ -2,7 +2,7 @@
 
 Typescript variant of [generator-express-no-stress](https://github.com/cdimascio/generator-express-no-stress)
 
-Create awesome [Express.js](www.expressjs.com) applications with best of breed tech including [Typescipt](https://www.typescriptlang.org/), structured logging with [Pino](https://github.com/pinojs/pino), API validation and interactive documentation via [Swagger](http://swagger.io/), environment based config with [dotenv](https://github.com/motdotla/dotenv), and [Backpack](https://github.com/palmerhq/backpack) powered builds. 
+Create awesome [Express.js](www.expressjs.com) applications with best of breed tech including [Typescipt](https://www.typescriptlang.org/), structured logging with [Pino](https://github.com/pinojs/pino), API validation and interactive documentation via [Swagger](http://swagger.io/), environment based config with [dotenv](https://github.com/motdotla/dotenv), and [Backpack](https://github.com/palmerhq/backpack) powered builds.
 
 ![](https://raw.githubusercontent.com/cdimascio/generator-express-no-stress-typescript/master/assets/typescript.png)![](https://github.com/cdimascio/generator-express-no-stress-typescript/raw/master/assets/swagger_node.jpeg)
 
@@ -10,9 +10,9 @@ generator-express-no-stress-typescript gets you up and running in seconds. It's 
 
 This generator scaffolds a fully functioning REST API server complete with interactive documentation, API validation, structured logging, environment driven config, and more. Simply run the generator and smile :-D
 
-
 ## Install
-*Requires Node 6 or greater*
+
+_Requires Node 6 or greater_
 
 `npm install -g yo generator-express-no-stress-typescript`
 
@@ -20,17 +20,18 @@ This generator scaffolds a fully functioning REST API server complete with inter
 
 `yo express-no-stress-typescript myapp`
 
-**Note:** *You may also [use Yarn](#use-yarn)*
+**Note:** _You may also [use Yarn](#use-yarn)_
 
 ## Run
-#### Run in *development* mode:
+
+#### Run in _development_ mode:
 
 ```
 cd myapp
 npm run dev
 ```
 
-#### Run in *production* mode:
+#### Run in _production_ mode:
 
 ```
 npm run compile
@@ -38,71 +39,70 @@ npm start
 ```
 
 #### Test
+
 ```
 npm test
 ```
 
 #### Debug
+
 Run `npm run debug` and attach your favourite inspector!
 
 #### Deploy to the Cloud
+
 e.g. CloudFoundry
 
 ```
 cf push myapp
 ```
+
 # Try it!
 
-- Static resources at [http://localhost:3000](http://localhost:3000)
-
-- Interactive API doc at [http://localhost:3000/api-explorer](http://localhost:3000/api-explorer)
-
-- Interactive API doc at [http://localhost:3000/api-explorer](http://localhost:3000/api-explorer)
-- Landing page at [http://localhost:3000](http://localhost:3000)
+* Interactive API doc at [http://localhost:3000/api-explorer](http://localhost:3000/api-explorer)
+* Landing page at [http://localhost:3000](http://localhost:3000)
 
 ## Use Yarn
 
 ```
 # scaffold
-yo express-no-stress-typescript myapp --yarn 
+yo express-no-stress-typescript myapp --yarn
 
 # start
 cd myapp
 npm start
 ```
 
-
 ## What you get!
 
-- [Typescript](https://www.typescriptlang.org/) - Typescript is a typed superset of JavaScript that compiles to plain JavaScript 
-- [Express.js](www.expressjs.com) - Fast, unopinionated
-, minimalist web framework for Node.js
-- [Pino](https://github.com/pinojs/pino) - Extremely fast node.js logger, inspired by Bunyan. It also includes a shell utility to pretty-print its log files
-- [dotenv](https://github.com/motdotla/dotenv) - Loads environment variables from .env for nodejs projects
-- [Backpack](https://github.com/palmerhq/backpack) -  a minimalistic build system for Node.js projects.
-- [Swagger](http://swagger.io/) - is a simple yet powerful representation of your RESTful API.
-- [SwaggerUI](http://swagger.io/) - dynamically generate beautiful documentation and sandbox from a Swagger-compliant API
-
+* [Typescript](https://www.typescriptlang.org/) - Typescript is a typed superset of JavaScript that compiles to plain JavaScript
+* [Express.js](www.expressjs.com) - Fast, unopinionated
+  , minimalist web framework for Node.js
+* [Pino](https://github.com/pinojs/pino) - Extremely fast node.js logger, inspired by Bunyan. It also includes a shell utility to pretty-print its log files
+* [dotenv](https://github.com/motdotla/dotenv) - Loads environment variables from .env for nodejs projects
+* [Backpack](https://github.com/palmerhq/backpack) - a minimalistic build system for Node.js projects.
+* [Swagger](http://swagger.io/) - is a simple yet powerful representation of your RESTful API.
+* [SwaggerUI](http://swagger.io/) - dynamically generate beautiful documentation and sandbox from a Swagger-compliant API
 
 ### API Validation
 
 Simply describe your APIs with Swagger and automagically get for free:
-- Interactive documentation
-- API validation
+
+* Interactive documentation
+* API validation
 
 #### Interactive API Doc
+
 ![](https://github.com/cdimascio/generator-express-no-stress-typescript/raw/master/assets/interactive-doc1.png)
 
-
 #### API Validation!
+
 Oops! I the API caller forgot to pass a `name` field, no stress, we've got this!
 
 ![](https://github.com/cdimascio/generator-express-no-stress-typescript/raw/master/assets/api-validation.png)
 
-
 ### Structured Logging
 
-Structured logging out of the box! 
+Structured logging out of the box!
 
 #### raw
 
@@ -117,8 +117,9 @@ Structured logging pretty printed by default - great for dev!
 ### API Validation Example
 
 Simply describe your APIs with Swagger and automatically get:
-- API request validation
-- Interactive documentation
+
+* API request validation
+* Interactive documentation
 
 ### example
 
@@ -169,7 +170,7 @@ paths:
           in: body
           description: number of items to skip
           required: true
-          schema: 
+          schema:
             $ref: "#/definitions/ExampleBody"
       responses:
         200:
@@ -189,15 +190,12 @@ paths:
         200:
           description: Return the example with the specified id
         404:
-          description: Example not 
-
+          description: Example not
 ```
 
 #### Invoke a POST request via the Interactive doc
 
 ![](https://github.com/cdimascio/generator-express-no-stress-typescript/raw/master/assets/interactive-doc.png)
-
-
 
 ## License
 
