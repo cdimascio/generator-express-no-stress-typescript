@@ -44,10 +44,6 @@ npm start
 npm test
 ```
 
-#### Debug
-
-Run `npm run debug` and attach your favourite inspector!
-
 #### Deploy to the Cloud
 
 e.g. CloudFoundry
