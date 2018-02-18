@@ -77,6 +77,7 @@ module.exports = class extends Generator {
           'test/examples.controller.ts',
           'server/common/swagger/Api.yaml',
           'public/api-explorer/index.html',
+          'public/api-explorer/swagger-ui-standalone-preset.js',
           'public/index.html',
           'gitignore',
         ];
