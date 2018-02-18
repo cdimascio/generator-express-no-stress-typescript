@@ -1,0 +1,4 @@
+--compilers ts-node/register
+--require source-map-support/register
+--full-trace
+--timeout 20000
