@@ -37,6 +37,14 @@ npm run compile
 npm start
 ```
 
+#### Test
+```
+npm test
+```
+
+#### Debug
+Run `npm run debug` and attach your favourite inspector!
+
 #### Deploy to the Cloud
 e.g. CloudFoundry
 
@@ -48,6 +56,9 @@ cf push myapp
 - Static resources at [http://localhost:3000](http://localhost:3000)
 
 - Interactive API doc at [http://localhost:3000/api-explorer](http://localhost:3000/api-explorer)
+
+- Interactive API doc at [http://localhost:3000/api-explorer](http://localhost:3000/api-explorer)
+- Landing page at [http://localhost:3000](http://localhost:3000)
 
 ## Use Yarn
 
