@@ -10,7 +10,7 @@ describe('Examples', () => {
       .expect('Content-Type', /json/)
       .then(r => {
         expect(r.body)
-          .to.be.an.an('array')
+          .to.be.an('array')
           .of.length(2);
       }));
 
@@ -21,7 +21,7 @@ describe('Examples', () => {
       .expect('Content-Type', /json/)
       .then(r => {
         expect(r.body)
-          .to.be.an.an('object')
+          .to.be.an('object')
           .that.has.property('name')
           .equal('test');
       }));
@@ -32,7 +32,7 @@ describe('Examples', () => {
       .expect('Content-Type', /json/)
       .then(r => {
         expect(r.body)
-          .to.be.an.an('object')
+          .to.be.an('object')
           .that.has.property('name')
           .equal('test');
       }));
