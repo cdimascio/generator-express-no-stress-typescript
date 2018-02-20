@@ -6,6 +6,6 @@
     "sourceMap": true,
     "typeRoots": ["node_modules/@types"]
   },
-  "include": ["typings.d.ts", "src/**/*.ts"],
+  "include": ["typings.d.ts", "server/**/*.ts"],
   "exclude": ["node_modules"]
 }
