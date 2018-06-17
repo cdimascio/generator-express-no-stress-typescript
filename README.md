@@ -38,6 +38,12 @@ npm run compile
 npm start
 ```
 
+## Debug
+
+```
+npm run debug
+```
+
 #### Test
 
 ```
