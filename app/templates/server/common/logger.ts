@@ -1,4 +1,4 @@
-import * as pino from 'pino';
+import pino from 'pino';
 
 const l = pino({
   name: process.env.APP_ID,

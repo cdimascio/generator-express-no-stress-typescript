@@ -1,10 +1,10 @@
-import * as express from 'express';
+import express from 'express';
 import { Application } from 'express';
-import * as path from 'path';
-import * as bodyParser from 'body-parser';
-import * as http from 'http';
-import * as os from 'os';
-import * as cookieParser from 'cookie-parser';
+import path from 'path';
+import bodyParser from 'body-parser';
+import http from 'http';
+import os from 'os';
+import cookieParser from 'cookie-parser';
 import swaggerify from './swagger';
 import l from './logger';
 

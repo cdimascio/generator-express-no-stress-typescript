@@ -1,6 +1,6 @@
 import 'mocha';
 import { expect } from 'chai';
-import * as request from 'supertest';
+import request from 'supertest';
 import Server from '../server';
 
 describe('Examples', () => {

@@ -1,6 +1,6 @@
-import * as middleware from 'swagger-express-middleware';
+import middleware from 'swagger-express-middleware';
 import { Application } from 'express';
-import * as path from 'path';
+import path from 'path';
 
 export default function (app: Application, routes: (app: Application) => void) {
   middleware(path.join(__dirname, 'Api.yaml'), app, function(err, middleware) {
