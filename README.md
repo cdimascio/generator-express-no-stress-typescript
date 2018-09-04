@@ -56,7 +56,7 @@ npm test
 
 ## Debug
 
-Run one of the following, then attach your favorite inspector e.g. [VSCode](#debug-in-vscode):
+Run one of the following, then attach your favorite inspector.
 
 ```shell
 # debug the server
@@ -99,10 +99,6 @@ The sections below describe all usage options available once the project is gene
 | `npm run test:debug` | Deubg tests                                                              |
 | `npm run compile`    | Transpile source code for production use                                 |
 | `npm start`          | Run the in _production_ mode. \*Requires running `npm run compile` first |
-
-### Debug in VSCode
-
-Add these [contents](https://github.com/cdimascio/generator-express-no-stress/blob/next/assets/.vscode/launch.json) to your `.vscode/launch.json` file
 
 ### Deploy to the Cloud
 
