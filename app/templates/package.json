@@ -6,8 +6,8 @@
   "scripts": {
     "start": "node dist/index.js",
     "compile": "ts-node build.ts && tsc",
-    "dev": "nodemon server --exec ts-node | pino -o 'short'",
-    "dev:debug": "nodemon server --exec ts-node --inspect-brk | pino -o 'short'",
+    "dev": "nodemon server/index.ts | pino -o 'short'",
+    "dev:debug": "nodemon --exec 'node -r ts-node/register --inspect-brk' server/index.ts  | pino -o 'short'",
     "test": "mocha test/**/*.ts --exit",
     "test:debug": "mocha --inspect-brk test/**/*.ts --exit"
   },
