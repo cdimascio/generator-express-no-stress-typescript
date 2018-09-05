@@ -21,7 +21,7 @@ This project is a Typescript variant of [generator-express-no-stress](https://gi
 _Requires Node 6 or greater_
 
 ```shell
-npm install -g yo generator-express-no-stress
+npm install -g yo generator-express-no-stress-typescript
 ```
 
 - See [here](#usage-cli) for use with Yarn and/or Docker
