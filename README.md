@@ -77,7 +77,7 @@ npm run test:debug
 ## Usage: CLI
 
 ```shell
-yo express-no-stress [appname] [--yarn] [--docker]
+yo express-no-stress-typescript [appname] [--yarn] [--docker]
 ```
 
 | Option     | default | Description                                                                |
@@ -113,7 +113,7 @@ cf push myapp
 
 ```
 # scaffold
-yo express-no-stress myapp --yarn
+yo express-no-stress-typescript myapp --yarn
 
 # start
 cd myapp
