@@ -12,7 +12,8 @@ generator-express-no-stress-typescript gets you up and running in seconds. It's 
 
 This generator scaffolds a fully functioning REST API server complete with interactive documentation, API validation, structured logging, environment driven config, and more. Simply run the generator and smile :-D
 
-This project is a Typescript variant of [generator-express-no-stress](https://github.com/cdimascio/generator-express-no-stress)
+This project is a Typescript variant of [generator-express-no-stress](https://github.com/cdimascio/generator-
+-stress)
 
 [Here's what you get!](#what-you-get)
 
@@ -29,7 +30,7 @@ npm install -g yo generator-express-no-stress-typescript
 ## Scaffold
 
 ```shell
-yo express-no-stress myapp
+yo express-no-stress-typescript myapp
 cd myapp
 ```
 
