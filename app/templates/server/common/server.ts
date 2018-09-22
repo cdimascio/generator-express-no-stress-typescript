@@ -21,13 +21,13 @@ export default class ExpressServer {
   }
 
   router(routes: (app: Application) => void): ExpressServer {
-    swaggerify(app, routes)
+    swaggerify(app, routes);
     return this;
   }
 
-  listen(port: number = parseInt(process.env.PORT)): Application {
+  listen(p: string | number = process.env.PORT): Application {
     const welcome = port => () => l.info(`up and running in ${process.env.NODE_ENV || 'development'} @: ${os.hostname() } on port: ${port}}`);
-    http.createServer(app).listen(port, welcome(port));
+    http.createServer(app).listen(p, welcome(p));
     return app;
   }
 }
