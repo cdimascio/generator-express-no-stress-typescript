@@ -1,5 +1,7 @@
 import Promise from 'bluebird';
 import L from '../../common/logger'
+import * as HttpStatus from 'http-status-codes';
+import * as errors from "../../common/errors";
 
 let id = 0;
 interface Example {
@@ -20,6 +22,8 @@ export class ExamplesService {
 
   byId(id: number): Promise<Example> {
     L.info(`fetch example with id ${id}`);
+    if (!id) throw new errors.HttpError(HttpStatus.BAD_REQUEST);
+
     return this.all().then(r => r[id])
   }
 

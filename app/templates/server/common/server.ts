@@ -7,8 +7,10 @@ import os from 'os';
 import cookieParser from 'cookie-parser';
 import swaggerify from './swagger';
 import l from './logger';
+import Mongoose from './mongoose'
 
 const app = express();
+const mongoose = new Mongoose;
 
 export default class ExpressServer {
   constructor() {
@@ -28,6 +30,7 @@ export default class ExpressServer {
   listen(p: string | number = process.env.PORT): Application {
     const welcome = port => () => l.info(`up and running in ${process.env.NODE_ENV || 'development'} @: ${os.hostname() } on port: ${port}}`);
     http.createServer(app).listen(p, welcome(p));
+    mongoose.init();
     return app;
   }
 }

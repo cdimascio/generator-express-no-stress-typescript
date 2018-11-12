@@ -17,7 +17,7 @@ module.exports = class extends Generator {
     this.useYarn = this.options.yarn;
     this.docker = this.options.docker;
     this.name = this.options.appname || 'myapp';
-    this.description = 'My cool TypeScript app';
+    this.description = 'My cool Mongo, Typescript, Express app';
     this.version = '1.0.0';
     this.apiRoot = '/api/v1';
   }
