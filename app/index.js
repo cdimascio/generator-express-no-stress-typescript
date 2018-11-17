@@ -52,9 +52,9 @@ module.exports = class extends Generator {
     }
 
     return this.prompt(prompts).then(r => {
-      this.name = r.name ? r.name : this.name;
-      this.description = r.description ? r.description : this.description;
-      this.version = r.version ? r.version : this.version;
+      this.name = r.name || this.name;
+      this.description = r.description || this.description;
+      this.version = r.version || this.version;
       this.apiRoot = r.apiRoot ? r.apiRoot.replace(/^\/?/, '/') : this.apiRoot;
     });
   }
