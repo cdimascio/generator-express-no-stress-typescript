@@ -97,7 +97,7 @@ The sections below describe all usage options available once the project is gene
 | `npm run dev`        | Run in _development_ mode                                                |
 | `npm run dev:debug`  | Debug in _development_ mode                                              |
 | `npm run test`       | Run tests                                                                |
-| `npm run test:debug` | Deubg tests                                                              |
+| `npm run test:debug` | Debug tests                                                              |
 | `npm run compile`    | Transpile source code for production use                                 |
 | `npm start`          | Run the in _production_ mode. \*Requires running `npm run compile` first |
 
