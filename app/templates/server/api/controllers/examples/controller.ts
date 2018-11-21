@@ -1,25 +1,59 @@
 import ExamplesService from '../../services/examples.service';
-import { Request, Response } from 'express';
+import { Request, Response, NextFunction } from 'express';
+import * as HttpStatus from 'http-status-codes';
 
 export class Controller {
-  all(req: Request, res: Response): void {
-    ExamplesService.all().then(r => res.json(r));
+
+  async all(req: Request, res: Response, next: NextFunction) {
+    try {
+      const docs = await ExamplesService.all();
+      return res.status(HttpStatus.OK).json(docs);
+    }
+    catch (err) {
+      return next(err);
+    }
   }
 
-  byId(req: Request, res: Response): void {
-    ExamplesService.byId(req.params.id).then(r => {
-      if (r) res.json(r);
-      else res.status(404).end();
-    });
+  async byId(req: Request, res: Response, next: NextFunction) {
+    try {
+      const doc = await ExamplesService.byId(req.params.id);
+      return res.status(HttpStatus.OK).json(doc);
+    }
+    catch (err) {
+      return next(err);
+    }
   }
 
-  create(req: Request, res: Response): void {
-    ExamplesService.create(req.body.name).then(r =>
-      res
-        .status(201)
-        .location(`/api/v1/examples/${r.id}`)
-        .json(r),
-    );
+  async create(req: Request, res: Response, next: NextFunction) {
+    try {
+      const doc = await ExamplesService.create(req.body);
+      return res.status(HttpStatus.CREATED).location(`/api/v1/examples/${doc._id}`).json(doc);
+    }
+    catch (err) {
+      return next(err);
+    }
   }
+
+  async patch(req: Request, res: Response, next: NextFunction) {
+    try {
+      const doc = await ExamplesService.patch(req.params.id, req.body);
+      return res.status(HttpStatus.OK).location(`/api/v1/examples/${doc._id}`).json(doc);
+    }
+    catch (err) {
+      return next(err);
+    }
+  }
+
+  async remove(req: Request, res: Response, next: NextFunction) {
+    try {
+      const doc = await ExamplesService.remove(req.params.id);
+      return res.status(HttpStatus.NO_CONTENT).send();
+    }
+    catch (err) {
+      return next(err);
+    }
+  }
+
 }
+
 export default new Controller();

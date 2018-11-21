@@ -1,6 +1,8 @@
-# generator-express-no-stress-typescript
+# generator-express-no-stress-typescript-mongoose
 
 ![](https://img.shields.io/badge/status-stable-green.svg) [![Codacy Badge](https://api.codacy.com/project/badge/Grade/21e362094c5a4c0da4841fc172cee95d)](https://www.codacy.com/app/cdimascio/generator-express-no-stress-typescript?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=cdimascio/generator-express-no-stress-typescript&amp;utm_campaign=Badge_Grade) ![](https://img.shields.io/badge/license-MIT-blue.svg)
+
+This project is a Mongoose/Mongo variant of [generator-express-no-stress-typescript](https://github.com/cdimascio/generator-express-no-stress-typescript)
 
 Create awesome [Express.js](www.expressjs.com) applications with best of breed tech including [Typescipt](https://www.typescriptlang.org/), structured logging with [Pino](https://github.com/pinojs/pino), API validation and interactive documentation via [Swagger](http://swagger.io/), environment based config with [dotenv](https://github.com/motdotla/dotenv).
 
@@ -12,8 +14,7 @@ generator-express-no-stress-typescript gets you up and running in seconds. It's 
 
 This generator scaffolds a fully functioning REST API server complete with interactive documentation, API validation, structured logging, environment driven config, and more. Simply run the generator and smile :-D
 
-This project is a Typescript variant of [generator-express-no-stress](https://github.com/cdimascio/generator-
--stress)
+This project is a Typescript variant of [generator-express-no-stress](https://github.com/cdimascio/generator-express-no-stress)
 
 [Here's what you get!](#what-you-get)
 

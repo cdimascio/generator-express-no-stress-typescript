@@ -1,9 +1,9 @@
 swagger: "2.0"
 info:
-  version: <%= version %>
-  title: <%= title %>
-  description: <%= description %>
-basePath: <%= apiRoot %>
+  version: 1.0.0
+  title: myapp
+  description: My cool Mongoose, Typescript, Express app
+basePath: /api/v1
 tags:
   - name: Examples
     description: Simple example endpoints
@@ -49,21 +49,58 @@ paths:
             $ref: "#/definitions/ExampleBody"
       responses:
         200:
-          description: Returns all examples
+          description: Returns newly created example
 
   /examples/{id}:
     get:
       tags:
         - Examples
+      description: Get an example
       parameters:
         - name: id
           in: path
           required: true
           description: The id of the example to retrieve
-          type: integer
+          type: string
       responses:
         200:
           description: Return the example with the specified id
+        404:
+          description: Example not found
+    patch:
+      tags:
+        - Examples
+      description: Update an example
+      parameters:
+        - name: id
+          in: path
+          required: true
+          description: The id of the example to update
+          type: string
+        - name: example
+          in: body
+          description: example attribtues to update
+          required: true
+          schema: 
+            $ref: "#/definitions/ExampleBody"
+      responses:
+        200:
+          description: Return updated examples
+        404:
+          description: Example not found
+    delete:
+      tags:
+        - Examples
+      description: Delete an example
+      parameters:
+        - name: id
+          in: path
+          required: true
+          description: The id of the example to delete
+          type: string
+      responses:
+        204:
+          description: Delete the example with the specified id
         404:
           description: Example not found
 
