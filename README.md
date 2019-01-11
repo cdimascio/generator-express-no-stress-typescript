@@ -124,7 +124,7 @@ npm start
 ## What you get!
 
 - [Typescript](https://www.typescriptlang.org/) - Typescript is a typed superset of JavaScript that compiles to plain JavaScript
-- [Express.js](www.expressjs.com) - Fast, unopinionated
+- [Express.js](https://www.expressjs.com) - Fast, unopinionated
   , minimalist web framework for Node.js
 - [Pino](https://github.com/pinojs/pino) - Extremely fast node.js logger, inspired by Bunyan. It also includes a shell utility to pretty-print its log files
 - [dotenv](https://github.com/motdotla/dotenv) - Loads environment variables from .env for nodejs projects
