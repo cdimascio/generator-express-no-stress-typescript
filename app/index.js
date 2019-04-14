@@ -80,6 +80,7 @@ module.exports = class extends Generator {
           'public/api-explorer/swagger-ui-standalone-preset.js',
           'public/index.html',
           'gitignore',
+          'server/api/controllers/examples/controller.ts',
         ];
 
         const copyOpts = this.docker
