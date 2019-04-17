@@ -20,6 +20,7 @@ module.exports = class extends Generator {
     this.description = 'My cool TypeScript app';
     this.version = '1.0.0';
     this.apiRoot = '/api/v1';
+    this.specification = 'swagger_2';
   }
 
   initializing() {}
@@ -41,6 +42,15 @@ module.exports = class extends Generator {
         name: 'apiVersion',
         message: `Version [${this.version}]`,
       },
+      {
+        type: 'list',
+        name: 'specification',
+        message: `OpenAPI spec version`,
+        choices: [
+          { name: 'OpenApi 3', value: 'openapi_3' },
+          { name: 'Swagger 2', value: 'swagger_2' },
+        ],
+      },
     ];
 
     if (!this.options.appname) {
@@ -56,6 +66,7 @@ module.exports = class extends Generator {
       this.description = r.description || this.description;
       this.version = r.version || this.version;
       this.apiRoot = r.apiRoot ? r.apiRoot.replace(/^\/?/, '/') : this.apiRoot;
+      this.specification = r.specification;
     });
   }
 
@@ -75,21 +86,34 @@ module.exports = class extends Generator {
           'server/routes.ts',
           '.env',
           'test/examples.controller.ts',
-          'server/common/swagger/Api.yaml',
+          'server/common/api.yml',
+          'server/common/server.ts',
+          'server/api/middlewares/error.handler.ts',
+          'server/api/controllers/examples/controller.ts',
           'public/api-explorer/index.html',
           'public/api-explorer/swagger-ui-standalone-preset.js',
           'public/index.html',
           'gitignore',
-          'server/api/controllers/examples/controller.ts',
         ];
 
-        const copyOpts = this.docker
-          ? null
-          : {
-              globOptions: {
-                ignore: ['**/+(Dockerfile|.dockerignore)'],
-              },
-            };
+        const copyOpts = {
+          globOptions: {
+            ignore: [],
+          },
+        };
+
+        if (this.specification === 'openapi_3') {
+          copyOpts.globOptions.ignore.push('**/server/common/swagger.ts');
+          copyOpts.globOptions.ignore.push('**/server/common/api.v2.yml');
+        } else {
+          files.push('server/common/api.v2.yml');
+          copyOpts.globOptions.ignore.push('**/server/common/openapi.ts');
+          copyOpts.globOptions.ignore.push('**/server/common/api.yml');
+        }
+        if (this.docker) {
+          copyOpts.globOptions.ignore.push('**/+(Dockerfile|.dockerignore)');
+        }
+
         this.fs.copy(src, dest, copyOpts);
         this.fs.copy(this.templatePath('.*'), dest, copyOpts);
 
@@ -99,13 +123,15 @@ module.exports = class extends Generator {
           description: this.description,
           version: this.version,
           apiRoot: this.apiRoot,
+          specification: this.specification,
         };
 
         files.forEach(f => {
           this.fs.copyTpl(
             this.templatePath(f),
             this.destinationPath(`${this.name}/${f}`),
-            opts
+            opts,
+            copyOpts
           );
         });
 
@@ -113,6 +139,12 @@ module.exports = class extends Generator {
           this.destinationPath(`${this.name}`, 'gitignore'),
           this.destinationPath(`${this.name}`, '.gitignore')
         );
+        if (this.specification !== 'openapi_3') {
+          this.fs.move(
+            this.destinationPath(`${this.name}`, 'server/common/api.v2.yml'),
+            this.destinationPath(`${this.name}`, 'server/common/api.yml')
+          );
+        }
       },
     };
   }

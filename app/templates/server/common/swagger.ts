@@ -1,9 +1,10 @@
+import path from 'path';
 import middleware from 'swagger-express-middleware';
 import { Application } from 'express';
-import path from 'path';
+import errorHandler from '../api/middlewares/error.handler';
 
 export default function (app: Application, routes: (app: Application) => void) {
-  middleware(path.join(__dirname, 'Api.yaml'), app, function(err, middleware) {
+  middleware(path.join(__dirname, 'api.yml'), app, function(err, middleware) {
 
     // Enable Express' case-sensitive and strict options
     // (so "/entities", "/Entities", and "/Entities/" are all different)
@@ -31,15 +32,9 @@ export default function (app: Application, routes: (app: Application) => void) {
       middleware.CORS(),
       middleware.validateRequest());
 
-    // Error handler to display the validation error as HTML
-    app.use(function (err, req, res, next) {
-      res.status(err.status);
-      res.send(
-        '<h1>' + err.status + ' Error</h1>' +
-        '<pre>' + err.message + '</pre>'
-      );
-    });
-
     routes(app);
+
+    // eslint-disable-next-line no-unused-vars, no-shadow
+    app.use(errorHandler);
   });
 }

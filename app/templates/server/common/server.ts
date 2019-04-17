@@ -5,7 +5,11 @@ import bodyParser from 'body-parser';
 import http from 'http';
 import os from 'os';
 import cookieParser from 'cookie-parser';
-import swaggerify from './swagger';
+<% if (specification === 'openapi_3') { %>
+  import installValidator from './openapi';
+<% } else { %>
+  import installValidator from './swagger';
+<% } %>
 import l from './logger';
 
 const app = express();
@@ -21,7 +25,7 @@ export default class ExpressServer {
   }
 
   router(routes: (app: Application) => void): ExpressServer {
-    swaggerify(app, routes);
+    installValidator(app, routes)
     return this;
   }
 

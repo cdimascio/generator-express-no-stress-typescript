@@ -46,7 +46,7 @@
       window.onload = function() {
         // Begin Swagger UI call region
         const ui = SwaggerUIBundle({
-          url: window.location.origin + '/spec',
+          url: window.location.origin + "<%= apiRoot %>/spec",
           dom_id: '#swagger-ui',
           deepLinking: true,
           presets: [SwaggerUIBundle.presets.apis, SwaggerUIStandalonePreset],

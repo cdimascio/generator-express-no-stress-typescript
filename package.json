@@ -1,7 +1,7 @@
 {
   "name": "generator-express-no-stress-typescript",
-  "version": "5.0.1",
-  "description": "Create awesome APIs with Typescript, ExpressJS and Swagger.",
+  "version": "6.0.1",
+  "description": "Create awesome APIs with Typescript, ExpressJS and OpenAPI/Swagger: Features automatic request validation, interactive API documentation, and more!",
   "main": "app/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -20,6 +20,8 @@
     "express",
     "generator",
     "typescript",
+    "api",
+    "microservice",
     "yeoman-generator",
     "babel",
     "yarn",
