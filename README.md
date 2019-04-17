@@ -1,8 +1,8 @@
 # generator-express-no-stress-typescript
 
-![](https://img.shields.io/badge/status-stable-green.svg) [![Codacy Badge](https://api.codacy.com/project/badge/Grade/21e362094c5a4c0da4841fc172cee95d)](https://www.codacy.com/app/cdimascio/generator-express-no-stress-typescript?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=cdimascio/generator-express-no-stress-typescript&amp;utm_campaign=Badge_Grade) ![](https://img.shields.io/badge/license-MIT-blue.svg)
+![](https://img.shields.io/badge/status-stable-green.svg) [![Codacy Badge](https://api.codacy.com/project/badge/Grade/21e362094c5a4c0da4841fc172cee95d)](https://www.codacy.com/app/cdimascio/generator-express-no-stress-typescript?utm_source=github.com&utm_medium=referral&utm_content=cdimascio/generator-express-no-stress-typescript&utm_campaign=Badge_Grade) ![](https://img.shields.io/badge/license-MIT-blue.svg)
 
-Create awesome [Express.js](http://www.expressjs.com) applications with best of breed tech including [Typescipt](https://www.typescriptlang.org/), structured logging with [Pino](https://github.com/pinojs/pino), API validation and interactive documentation via [Swagger](http://swagger.io/), environment based config with [dotenv](https://github.com/motdotla/dotenv).
+Create awesome [Express.js](http://www.expressjs.com) applications with best of breed tech including [Typescipt](https://www.typescriptlang.org/), structured logging with [Pino](https://github.com/pinojs/pino), API validation and interactive documentation via [OpenAPI 3](https://swagger.io/docs/specification/basic-structure/) or [Swagger](https://swagger.io/docs/specification/2-0/basic-structure/), environment based config with [dotenv](https://github.com/motdotla/dotenv).
 
 <p align="center">
 <img src="https://raw.githubusercontent.com/cdimascio/generator-express-no-stress-typescript/master/assets/express-no-stress-logo-ts.jpg"
