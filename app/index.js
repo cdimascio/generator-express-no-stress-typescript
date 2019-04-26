@@ -110,7 +110,7 @@ module.exports = class extends Generator {
           copyOpts.globOptions.ignore.push('**/server/common/openapi.ts');
           copyOpts.globOptions.ignore.push('**/server/common/api.yml');
         }
-        if (this.docker) {
+        if (!this.docker) {
           copyOpts.globOptions.ignore.push('**/+(Dockerfile|.dockerignore)');
         }
 
