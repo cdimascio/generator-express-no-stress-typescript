@@ -1,6 +1,6 @@
 {
   "name": "generator-express-no-stress-typescript",
-  "version": "6.0.12",
+  "version": "6.1.0",
   "description": "Create awesome APIs with Typescript, ExpressJS and OpenAPI/Swagger: Features automatic request validation, interactive API documentation, and more!",
   "main": "app/index.js",
   "scripts": {
@@ -15,7 +15,6 @@
   "dependencies": {
     "yeoman-generator": "^3.2.0"
   },
-  "devDependencies": {},
   "keywords": [
     "express",
     "generator",
