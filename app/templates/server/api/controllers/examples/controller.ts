@@ -7,7 +7,7 @@ export class Controller {
   }
 
   byId(req: Request, res: Response): void {
-    ExamplesService.byId(req.params.id).then(r => {
+    ExamplesService.byId(req.params['id']).then(r => {
       if (r) res.json(r);
       else res.status(404).end();
     });
