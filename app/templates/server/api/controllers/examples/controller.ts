@@ -7,7 +7,8 @@ export class Controller {
   }
 
   byId(req: Request, res: Response): void {
-    ExamplesService.byId(req.params['id']).then(r => {
+    const id = Number.parseInt(req.params['id'])
+    ExamplesService.byId(id).then(r => {
       if (r) res.json(r);
       else res.status(404).end();
     });
