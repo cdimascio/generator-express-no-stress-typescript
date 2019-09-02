@@ -19,7 +19,7 @@
     "express": "^4.17.1",
     "pino": "^5.13.1",
     <% if (specification === 'openapi_3') { %>
-      "express-openapi-validator": "^1.6.2"
+      "express-openapi-validator": "^1.7.0"
       <% } else { %>
       "swagger-express-middleware": "^2.0.1"
       <% } %>
@@ -39,7 +39,7 @@
     "ts-lint": "^4.5.1",
     "ts-node": "^8.3.0",
     "tslint": "^5.18.0",
-    "typescript": "^3.5.3"
+    "typescript": "^3.6.2"
   },
   "author": "Carmine DiMascio <cdimascio@gmail.com> (https://github.com/cdimascio)"
 }
