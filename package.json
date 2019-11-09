@@ -1,6 +1,6 @@
 {
   "name": "generator-express-no-stress-typescript",
-  "version": "7.1.2",
+  "version": "7.2.0",
   "description": "Create awesome APIs with Typescript, ExpressJS and OpenAPI/Swagger: Features automatic request validation, interactive API documentation, and more!",
   "main": "app/index.js",
   "scripts": {
