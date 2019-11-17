@@ -102,13 +102,12 @@ module.exports = class extends Generator {
           },
         };
 
-        if (this.specification === 'swagger_2') {
-          files.push('server/common/api.v2.yml');
-          copyOpts.globOptions.ignore.push('**/server/common/openapi.ts');
-          copyOpts.globOptions.ignore.push('**/server/common/api.yml');
-        } else {
-          copyOpts.globOptions.ignore.push('**/server/common/swagger.ts');
+        if (this.specification === 'openapi_3') {
+          copyOpts.globOptions.ignore.push('**/server/common/swagger.js');
           copyOpts.globOptions.ignore.push('**/server/common/api.v2.yml');
+        } else {
+          files.push('server/common/api.v2.yml');
+          copyOpts.globOptions.ignore.push('**/server/common/api.yml');
         }
         if (!this.docker) {
           copyOpts.globOptions.ignore.push('**/+(Dockerfile|.dockerignore)');
