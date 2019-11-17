@@ -102,13 +102,13 @@ module.exports = class extends Generator {
           },
         };
 
-        if (this.specification === 'openapi_3') {
-          copyOpts.globOptions.ignore.push('**/server/common/swagger.ts');
-          copyOpts.globOptions.ignore.push('**/server/common/api.v2.yml');
-        } else {
+        if (this.specification === 'swagger_2') {
           files.push('server/common/api.v2.yml');
           copyOpts.globOptions.ignore.push('**/server/common/openapi.ts');
           copyOpts.globOptions.ignore.push('**/server/common/api.yml');
+        } else {
+          copyOpts.globOptions.ignore.push('**/server/common/swagger.ts');
+          copyOpts.globOptions.ignore.push('**/server/common/api.v2.yml');
         }
         if (!this.docker) {
           copyOpts.globOptions.ignore.push('**/+(Dockerfile|.dockerignore)');
@@ -161,5 +161,11 @@ module.exports = class extends Generator {
     }
   }
 
-  end() {}
+  end() {
+    if (this.useYarn) {
+      this.spawnCommandSync('yarn', ['lint:fix']);
+    } else {
+      this.spawnCommandSync('npm', ['run', 'lint:fix']);
+    }
+  }
 };
