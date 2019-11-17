@@ -50,6 +50,7 @@ module.exports = class extends Generator {
           { name: 'OpenApi 3', value: 'openapi_3' },
           { name: 'Swagger 2', value: 'swagger_2' },
         ],
+        default: 'openapi_3',
       },
     ];
 
@@ -103,14 +104,16 @@ module.exports = class extends Generator {
         };
 
         if (this.specification === 'openapi_3') {
-          copyOpts.globOptions.ignore.push('**/server/common/swagger.js');
-          copyOpts.globOptions.ignore.push('**/server/common/api.v2.yml');
+          copyOpts.globOptions.ignore.push(src + '/server/common/swagger.ts');
+          copyOpts.globOptions.ignore.push(src + '/server/common/api.v2.yml');
         } else {
           files.push('server/common/api.v2.yml');
-          copyOpts.globOptions.ignore.push('**/server/common/api.yml');
+          copyOpts.globOptions.ignore.push(src + '/server/common/api.yml');
         }
         if (!this.docker) {
-          copyOpts.globOptions.ignore.push('**/+(Dockerfile|.dockerignore)');
+          copyOpts.globOptions.ignore.push(
+            src + '/+(Dockerfile|.dockerignore)'
+          );
         }
 
         this.fs.copy(src, dest, copyOpts);
