@@ -1,20 +1,21 @@
-import express from 'express';
-import { Application } from 'express';
+import express, { Application } from 'express';
 import path from 'path';
 import bodyParser from 'body-parser';
 import http from 'http';
 import os from 'os';
 import cookieParser from 'cookie-parser';
-<% if (specification === 'openapi_3') { %>
-  import installValidator from './openapi';
-<% } else { %>
-  import installValidator from './swagger';
-<% } %>
 import l from './logger';
+<% if (specification === 'openapi_3') { %>
+import installValidator from './openapi';
+<% } else { %>
+import installValidator from './swagger';
+<% } %>
 
 const app = express();
+const exit = process.exit;
 
 export default class ExpressServer {
+  private routes: (app: Application) => void;
   constructor() {
     const root = path.normalize(__dirname + '/../..');
     app.set('appPath', root + 'client');
@@ -26,13 +27,24 @@ export default class ExpressServer {
   }
 
   router(routes: (app: Application) => void): ExpressServer {
-    installValidator(app, routes)
+    this.routes = routes;
     return this;
   }
 
-  listen(p: string | number = process.env.PORT): Application {
-    const welcome = port => () => l.info(`up and running in ${process.env.NODE_ENV || 'development'} @: ${os.hostname() } on port: ${port}}`);
-    http.createServer(app).listen(p, welcome(p));
+  listen(port: number): Application {
+    const welcome = (p: number) => () =>
+      l.info(
+        `up and running in ${process.env.NODE_ENV ||
+          'development'} @: ${os.hostname()} on port: ${p}}`
+      );
+
+    installValidator(app, this.routes).then(() => {
+      http.createServer(app).listen(port, welcome(port));
+    }).catch(e => {
+      l.error(e);
+      exit(1)
+    });
+
     return app;
   }
 }
