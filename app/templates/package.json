@@ -20,10 +20,10 @@
     "express": "^4.17.1",
     "pino": "^5.16.0",
     <% if (specification === 'openapi_3') { %>
-      "express-openapi-validator": "^3.6.7"
-      <% } else { %>
-      "swagger-express-middleware": "^2.0.4"
-      <% } %>
+    "express-openapi-validator": "^3.6.7"
+    <% } else { %>
+    "swagger-express-middleware": "^2.0.4"
+    <% } %>
   },
   "devDependencies": {
     "@types/chai": "^4.2.8",
