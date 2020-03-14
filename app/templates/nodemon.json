@@ -3,6 +3,9 @@
     "ts": "ts-node"
   },
   "ignore": ["test/**/*.ts", "test/**/*.spec.ts", ".git", "node_modules"],
-  "watch": ["server"],
+  "watch": [
+    "server",
+    ".env"
+  ],
   "ext": "ts,js,json,yaml,yml"
 }
