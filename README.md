@@ -255,6 +255,24 @@ paths:
 
 ![](https://github.com/cdimascio/generator-express-no-stress-typescript/raw/master/assets/interactive-doc.png)
 
+## FAQ
+
+**Q:**: I previously generated an app, but I want to change the API root. How do I do this?
+
+**A**: You need to make to small changes
+  1. Modify `server/routes.js`
+  ```javascript
+     // Change your original path e.g. /api/v1/examples, to:
+     app.use('/api/v2/examples', examplesRouter);
+   ```
+
+  2. Modify `server/common/api.yaml` and update the api root:
+  ```yaml
+    # Change e.g. /api/v1 to /api/v2
+    servers:
+    - url: /api/v2   
+  ```
+
 ## License
 
 [MIT](LICENSE)
