@@ -1,16 +1,6 @@
 Description:
-    Creates a default Swagger enabled ExpressJS app
+    Scaffolds an Express app using Typescript, ExpressJS and OpenAPI
+    The applicaiotn features automatic request/response validation, interactive API documentation, structured logging and more!
 
 Example:
-    yo express-no-stress myapp [--yarn]
-
-    This will create:
-        myapp/.bakpack.config.js
-        myapp/.env
-        myapp/.gitignore
-        myapp/tsconfig.js
-        myapp/README.md
-        myapp/index.js
-        myapp/package.json
-        myapp/public/
-        myapp/server/
+    yo express-no-stress myapp [--yarn] [--docker]
