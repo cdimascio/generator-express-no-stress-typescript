@@ -7,9 +7,9 @@
     "start": "node dist/index.js",
     "compile": "ts-node build.ts && tsc",
     "dev": "nodemon server/index.ts | pino-pretty",
-    "dev:debug": "nodemon --exec 'node -r ts-node/register --inspect-brk' server/index.ts | pino-pretty",
-    "lint": "eslint -c .eslintrc.js '{server, test}/**/*.{js,ts,tsx}' --quiet",
-    "lint:fix": "eslint -c .eslintrc.js '{server, test}/**/*.{js,ts,tsx}' --quiet --fix",
+    "dev:debug": "nodemon --exec \"node -r ts-node/register --inspect-brk\" server/index.ts | pino-pretty",
+    "lint": "eslint -c .eslintrc.js \"{server, test}/**/*.{js,ts,tsx}\" --quiet",
+    "lint:fix": "eslint -c .eslintrc.js \"{server, test}/**/*.{js,ts,tsx}\" --quiet --fix",
     "test": "mocha -r ts-node/register test/**/*.ts --exit",
     "test:debug": "mocha -r ts-node/register --inspect-brk test/**/*.ts --exit"
   },
