@@ -1,6 +1,6 @@
 # generator-express-no-stress-typescript
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-2-orange.svg?style=flat-square)](#contributors-)
+[![All Contributors](https://img.shields.io/badge/all_contributors-3-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 ![](https://img.shields.io/badge/status-stable-green.svg) ![](https://img.shields.io/npm/v/generator-express-no-stress-typescript.svg) [![Codacy Badge](https://api.codacy.com/project/badge/Grade/21e362094c5a4c0da4841fc172cee95d)](https://www.codacy.com/app/cdimascio/generator-express-no-stress-typescript?utm_source=github.com&utm_medium=referral&utm_content=cdimascio/generator-express-no-stress-typescript&utm_campaign=Badge_Grade) [![](https://img.shields.io/gitter/room/cdimascio-oss/community?color=%23eb205a)](https://gitter.im/cdimascio-oss/community) ![](https://img.shields.io/badge/license-MIT-blue.svg)
@@ -298,6 +298,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
   <tr>
     <td align="center"><a href="https://blog.brakmic.com"><img src="https://avatars1.githubusercontent.com/u/56779?v=4" width="100px;" alt=""/><br /><sub><b>Harris Brakmić</b></sub></a><br /><a href="https://github.com/cdimascio/generator-express-no-stress-typescript/commits?author=brakmic" title="Code">💻</a></td>
     <td align="center"><a href="https://twitter.com/pubkeypubkey"><img src="https://avatars3.githubusercontent.com/u/8926560?v=4" width="100px;" alt=""/><br /><sub><b>Daniel Meyer</b></sub></a><br /><a href="https://github.com/cdimascio/generator-express-no-stress-typescript/commits?author=pubkey" title="Documentation">📖</a></td>
+    <td align="center"><a href="https://otaku.codes"><img src="https://avatars0.githubusercontent.com/u/13603045?v=4" width="100px;" alt=""/><br /><sub><b>Viraj Trivedi</b></sub></a><br /><a href="https://github.com/cdimascio/generator-express-no-stress-typescript/commits?author=inf3cti0n95" title="Code">💻</a></td>
   </tr>
 </table>
 
