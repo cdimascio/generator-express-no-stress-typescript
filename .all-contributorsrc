@@ -40,6 +40,15 @@
       "contributions": [
         "doc"
       ]
+    },
+    {
+      "login": "Steffion",
+      "name": "Stef de Goey",
+      "avatar_url": "https://avatars2.githubusercontent.com/u/3907488?v=4",
+      "profile": "http://www.stefdegoey.nl",
+      "contributions": [
+        "code"
+      ]
     }
   ],
   "contributorsPerLine": 7,
