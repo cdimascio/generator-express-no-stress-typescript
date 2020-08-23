@@ -78,6 +78,15 @@
         "doc",
         "code"
       ]
+    },
+    {
+      "login": "rkamradt",
+      "name": "Randy Kamradt",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/6883379?v=4",
+      "profile": "https://medium.com/@rlkamradt",
+      "contributions": [
+        "code"
+      ]
     }
   ],
   "contributorsPerLine": 7,

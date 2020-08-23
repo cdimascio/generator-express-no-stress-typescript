@@ -1,7 +1,7 @@
 # generator-express-no-stress-typescript
 
 ![](https://img.shields.io/badge/status-stable-green.svg) ![](https://img.shields.io/npm/v/generator-express-no-stress-typescript.svg) [![Codacy Badge](https://api.codacy.com/project/badge/Grade/21e362094c5a4c0da4841fc172cee95d)](https://www.codacy.com/app/cdimascio/generator-express-no-stress-typescript?utm_source=github.com&utm_medium=referral&utm_content=cdimascio/generator-express-no-stress-typescript&utm_campaign=Badge_Grade) [![](https://img.shields.io/gitter/room/cdimascio-oss/community?color=%23eb205a)](https://gitter.im/cdimascio-oss/community) <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-8-orange.svg?style=flat-square)](#contributors-)
+[![All Contributors](https://img.shields.io/badge/all_contributors-9-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END --> ![](https://img.shields.io/badge/license-MIT-blue.svg)
 
 Create awesome [Express.js](http://www.expressjs.com) applications with best of breed tech including [Typescript](https://www.typescriptlang.org/), structured logging with [Pino](https://github.com/pinojs/pino), API validation and interactive documentation via an [OpenAPI 3](https://swagger.io/specification/) or [Swagger 2](https://swagger.io/specification/v2/) spec, environment based config with [dotenv](https://github.com/motdotla/dotenv).
@@ -305,6 +305,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
   </tr>
   <tr>
     <td align="center"><a href="https://github.com/tsekityam"><img src="https://avatars3.githubusercontent.com/u/3814422?v=4" width="100px;" alt=""/><br /><sub><b>Tse Kit Yam</b></sub></a><br /><a href="https://github.com/cdimascio/generator-express-no-stress-typescript/commits?author=tsekityam" title="Documentation">📖</a> <a href="https://github.com/cdimascio/generator-express-no-stress-typescript/commits?author=tsekityam" title="Code">💻</a></td>
+    <td align="center"><a href="https://medium.com/@rlkamradt"><img src="https://avatars3.githubusercontent.com/u/6883379?v=4" width="100px;" alt=""/><br /><sub><b>Randy Kamradt</b></sub></a><br /><a href="https://github.com/cdimascio/generator-express-no-stress-typescript/commits?author=rkamradt" title="Code">💻</a></td>
   </tr>
 </table>
 
