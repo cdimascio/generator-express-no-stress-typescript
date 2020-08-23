@@ -13,6 +13,15 @@
       "contributions": [
         "code"
       ]
+    },
+    {
+      "login": "pubkey",
+      "name": "Daniel Meyer",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/8926560?v=4",
+      "profile": "https://twitter.com/pubkeypubkey",
+      "contributions": [
+        "doc"
+      ]
     }
   ],
   "contributorsPerLine": 7,
