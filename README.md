@@ -1,6 +1,6 @@
 # generator-express-no-stress-typescript
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-5-orange.svg?style=flat-square)](#contributors-)
+[![All Contributors](https://img.shields.io/badge/all_contributors-6-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 ![](https://img.shields.io/badge/status-stable-green.svg) ![](https://img.shields.io/npm/v/generator-express-no-stress-typescript.svg) [![Codacy Badge](https://api.codacy.com/project/badge/Grade/21e362094c5a4c0da4841fc172cee95d)](https://www.codacy.com/app/cdimascio/generator-express-no-stress-typescript?utm_source=github.com&utm_medium=referral&utm_content=cdimascio/generator-express-no-stress-typescript&utm_campaign=Badge_Grade) [![](https://img.shields.io/gitter/room/cdimascio-oss/community?color=%23eb205a)](https://gitter.im/cdimascio-oss/community) ![](https://img.shields.io/badge/license-MIT-blue.svg)
@@ -301,6 +301,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
     <td align="center"><a href="https://otaku.codes"><img src="https://avatars0.githubusercontent.com/u/13603045?v=4" width="100px;" alt=""/><br /><sub><b>Viraj Trivedi</b></sub></a><br /><a href="https://github.com/cdimascio/generator-express-no-stress-typescript/commits?author=inf3cti0n95" title="Code">💻</a></td>
     <td align="center"><a href="https://github.com/uronly14me"><img src="https://avatars2.githubusercontent.com/u/5186814?v=4" width="100px;" alt=""/><br /><sub><b>Sangbeom Han</b></sub></a><br /><a href="https://github.com/cdimascio/generator-express-no-stress-typescript/commits?author=uronly14me" title="Documentation">📖</a></td>
     <td align="center"><a href="http://www.stefdegoey.nl"><img src="https://avatars2.githubusercontent.com/u/3907488?v=4" width="100px;" alt=""/><br /><sub><b>Stef de Goey</b></sub></a><br /><a href="https://github.com/cdimascio/generator-express-no-stress-typescript/commits?author=Steffion" title="Code">💻</a></td>
+    <td align="center"><a href="https://github.com/Rogermax"><img src="https://avatars1.githubusercontent.com/u/2633254?v=4" width="100px;" alt=""/><br /><sub><b>Roger</b></sub></a><br /><a href="https://github.com/cdimascio/generator-express-no-stress-typescript/commits?author=Rogermax" title="Code">💻</a></td>
   </tr>
 </table>
 
