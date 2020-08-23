@@ -58,6 +58,16 @@
       "contributions": [
         "code"
       ]
+    },
+    {
+      "login": "bagofjuice",
+      "name": "Vikash Chauhan",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/1395172?v=4",
+      "profile": "https://github.com/bagofjuice",
+      "contributions": [
+        "code",
+        "doc"
+      ]
     }
   ],
   "contributorsPerLine": 7,
