@@ -1,0 +1,24 @@
+{
+  "files": [
+    "README.md"
+  ],
+  "imageSize": 100,
+  "commit": false,
+  "contributors": [
+    {
+      "login": "brakmic",
+      "name": "Harris Brakmić",
+      "avatar_url": "https://avatars1.githubusercontent.com/u/56779?v=4",
+      "profile": "https://blog.brakmic.com",
+      "contributions": [
+        "code"
+      ]
+    }
+  ],
+  "contributorsPerLine": 7,
+  "projectName": "generator-express-no-stress-typescript",
+  "projectOwner": "cdimascio",
+  "repoType": "github",
+  "repoHost": "https://github.com",
+  "skipCi": true
+}
