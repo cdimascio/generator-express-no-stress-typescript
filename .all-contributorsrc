@@ -68,6 +68,16 @@
         "code",
         "doc"
       ]
+    },
+    {
+      "login": "tsekityam",
+      "name": "Tse Kit Yam",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/3814422?v=4",
+      "profile": "https://github.com/tsekityam",
+      "contributions": [
+        "doc",
+        "code"
+      ]
     }
   ],
   "contributorsPerLine": 7,
