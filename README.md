@@ -1,6 +1,8 @@
 # generator-express-no-stress-typescript
 
-![](https://img.shields.io/badge/status-stable-green.svg) ![](https://img.shields.io/npm/v/generator-express-no-stress-typescript.svg) [![Codacy Badge](https://api.codacy.com/project/badge/Grade/21e362094c5a4c0da4841fc172cee95d)](https://www.codacy.com/app/cdimascio/generator-express-no-stress-typescript?utm_source=github.com&utm_medium=referral&utm_content=cdimascio/generator-express-no-stress-typescript&utm_campaign=Badge_Grade) [![](https://img.shields.io/gitter/room/cdimascio-oss/community?color=%23eb205a)](https://gitter.im/cdimascio-oss/community) ![](https://img.shields.io/badge/license-MIT-blue.svg)
+![](https://img.shields.io/badge/status-stable-green.svg) ![](https://img.shields.io/npm/v/generator-express-no-stress-typescript.svg) [![Codacy Badge](https://api.codacy.com/project/badge/Grade/21e362094c5a4c0da4841fc172cee95d)](https://www.codacy.com/app/cdimascio/generator-express-no-stress-typescript?utm_source=github.com&utm_medium=referral&utm_content=cdimascio/generator-express-no-stress-typescript&utm_campaign=Badge_Grade) [![](https://img.shields.io/gitter/room/cdimascio-oss/community?color=%23eb205a)](https://gitter.im/cdimascio-oss/community) <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
+[![All Contributors](https://img.shields.io/badge/all_contributors-9-orange.svg?style=flat-square)](#contributors-)
+<!-- ALL-CONTRIBUTORS-BADGE:END --> ![](https://img.shields.io/badge/license-MIT-blue.svg)
 
 Create awesome [Express.js](http://www.expressjs.com) applications with best of breed tech including [Typescript](https://www.typescriptlang.org/), structured logging with [Pino](https://github.com/pinojs/pino), API validation and interactive documentation via an [OpenAPI 3](https://swagger.io/specification/) or [Swagger 2](https://swagger.io/specification/v2/) spec, environment based config with [dotenv](https://github.com/motdotla/dotenv).
 
@@ -283,3 +285,32 @@ paths:
 [MIT](LICENSE)
 
 <a href="https://www.buymeacoffee.com/m97tA5c" target="_blank"><img src="https://bmc-cdn.nyc3.digitaloceanspaces.com/BMC-button-images/custom_images/orange_img.png" alt="Buy Me A Coffee" style="height: auto !important;width: auto !important;" ></a>
+
+## Contributors ✨
+
+Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
+
+<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
+<!-- prettier-ignore-start -->
+<!-- markdownlint-disable -->
+<table>
+  <tr>
+    <td align="center"><a href="https://blog.brakmic.com"><img src="https://avatars1.githubusercontent.com/u/56779?v=4" width="100px;" alt=""/><br /><sub><b>Harris Brakmić</b></sub></a><br /><a href="https://github.com/cdimascio/generator-express-no-stress-typescript/commits?author=brakmic" title="Code">💻</a></td>
+    <td align="center"><a href="https://twitter.com/pubkeypubkey"><img src="https://avatars3.githubusercontent.com/u/8926560?v=4" width="100px;" alt=""/><br /><sub><b>Daniel Meyer</b></sub></a><br /><a href="https://github.com/cdimascio/generator-express-no-stress-typescript/commits?author=pubkey" title="Documentation">📖</a></td>
+    <td align="center"><a href="https://otaku.codes"><img src="https://avatars0.githubusercontent.com/u/13603045?v=4" width="100px;" alt=""/><br /><sub><b>Viraj Trivedi</b></sub></a><br /><a href="https://github.com/cdimascio/generator-express-no-stress-typescript/commits?author=inf3cti0n95" title="Code">💻</a></td>
+    <td align="center"><a href="https://github.com/uronly14me"><img src="https://avatars2.githubusercontent.com/u/5186814?v=4" width="100px;" alt=""/><br /><sub><b>Sangbeom Han</b></sub></a><br /><a href="https://github.com/cdimascio/generator-express-no-stress-typescript/commits?author=uronly14me" title="Documentation">📖</a></td>
+    <td align="center"><a href="http://www.stefdegoey.nl"><img src="https://avatars2.githubusercontent.com/u/3907488?v=4" width="100px;" alt=""/><br /><sub><b>Stef de Goey</b></sub></a><br /><a href="https://github.com/cdimascio/generator-express-no-stress-typescript/commits?author=Steffion" title="Code">💻</a></td>
+    <td align="center"><a href="https://github.com/Rogermax"><img src="https://avatars1.githubusercontent.com/u/2633254?v=4" width="100px;" alt=""/><br /><sub><b>Roger</b></sub></a><br /><a href="https://github.com/cdimascio/generator-express-no-stress-typescript/commits?author=Rogermax" title="Code">💻</a></td>
+    <td align="center"><a href="https://github.com/bagofjuice"><img src="https://avatars3.githubusercontent.com/u/1395172?v=4" width="100px;" alt=""/><br /><sub><b>Vikash Chauhan</b></sub></a><br /><a href="https://github.com/cdimascio/generator-express-no-stress-typescript/commits?author=bagofjuice" title="Code">💻</a> <a href="https://github.com/cdimascio/generator-express-no-stress-typescript/commits?author=bagofjuice" title="Documentation">📖</a></td>
+  </tr>
+  <tr>
+    <td align="center"><a href="https://github.com/tsekityam"><img src="https://avatars3.githubusercontent.com/u/3814422?v=4" width="100px;" alt=""/><br /><sub><b>Tse Kit Yam</b></sub></a><br /><a href="https://github.com/cdimascio/generator-express-no-stress-typescript/commits?author=tsekityam" title="Documentation">📖</a> <a href="https://github.com/cdimascio/generator-express-no-stress-typescript/commits?author=tsekityam" title="Code">💻</a></td>
+    <td align="center"><a href="https://medium.com/@rlkamradt"><img src="https://avatars3.githubusercontent.com/u/6883379?v=4" width="100px;" alt=""/><br /><sub><b>Randy Kamradt</b></sub></a><br /><a href="https://github.com/cdimascio/generator-express-no-stress-typescript/commits?author=rkamradt" title="Code">💻</a></td>
+  </tr>
+</table>
+
+<!-- markdownlint-enable -->
+<!-- prettier-ignore-end -->
+<!-- ALL-CONTRIBUTORS-LIST:END -->
+
+This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification. Contributions of any kind welcome!

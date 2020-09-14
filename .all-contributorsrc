@@ -1,0 +1,98 @@
+{
+  "files": [
+    "README.md"
+  ],
+  "imageSize": 100,
+  "commit": false,
+  "contributors": [
+    {
+      "login": "brakmic",
+      "name": "Harris Brakmić",
+      "avatar_url": "https://avatars1.githubusercontent.com/u/56779?v=4",
+      "profile": "https://blog.brakmic.com",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "pubkey",
+      "name": "Daniel Meyer",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/8926560?v=4",
+      "profile": "https://twitter.com/pubkeypubkey",
+      "contributions": [
+        "doc"
+      ]
+    },
+    {
+      "login": "inf3cti0n95",
+      "name": "Viraj Trivedi",
+      "avatar_url": "https://avatars0.githubusercontent.com/u/13603045?v=4",
+      "profile": "https://otaku.codes",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "uronly14me",
+      "name": "Sangbeom Han",
+      "avatar_url": "https://avatars2.githubusercontent.com/u/5186814?v=4",
+      "profile": "https://github.com/uronly14me",
+      "contributions": [
+        "doc"
+      ]
+    },
+    {
+      "login": "Steffion",
+      "name": "Stef de Goey",
+      "avatar_url": "https://avatars2.githubusercontent.com/u/3907488?v=4",
+      "profile": "http://www.stefdegoey.nl",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "Rogermax",
+      "name": "Roger",
+      "avatar_url": "https://avatars1.githubusercontent.com/u/2633254?v=4",
+      "profile": "https://github.com/Rogermax",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "bagofjuice",
+      "name": "Vikash Chauhan",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/1395172?v=4",
+      "profile": "https://github.com/bagofjuice",
+      "contributions": [
+        "code",
+        "doc"
+      ]
+    },
+    {
+      "login": "tsekityam",
+      "name": "Tse Kit Yam",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/3814422?v=4",
+      "profile": "https://github.com/tsekityam",
+      "contributions": [
+        "doc",
+        "code"
+      ]
+    },
+    {
+      "login": "rkamradt",
+      "name": "Randy Kamradt",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/6883379?v=4",
+      "profile": "https://medium.com/@rlkamradt",
+      "contributions": [
+        "code"
+      ]
+    }
+  ],
+  "contributorsPerLine": 7,
+  "projectName": "generator-express-no-stress-typescript",
+  "projectOwner": "cdimascio",
+  "repoType": "github",
+  "repoHost": "https://github.com",
+  "skipCi": true
+}
