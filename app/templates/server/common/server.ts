@@ -6,13 +6,13 @@ import os from 'os';
 import cookieParser from 'cookie-parser';
 import l from './logger';
 <% if (specification === 'openapi_3') { %>
-import installValidator from './openapi';
+import errorHandler from '../api/middlewares/error.handler'
+import * as OpenApiValidator from 'express-openapi-validator';
 <% } else { %>
 import installValidator from './swagger';
 <% } %>
 
 const app = express();
-const exit = process.exit;
 
 export default class ExpressServer {
   private routes: (app: Application) => void;
@@ -24,11 +24,30 @@ export default class ExpressServer {
     app.use(bodyParser.text({ limit: process.env.REQUEST_LIMIT || '100kb'}));
     app.use(cookieParser(process.env.SESSION_SECRET));
     app.use(express.static(`${root}/public`));
+    <% if (specification === 'openapi_3') { %>
+    const apiSpec = path.join(__dirname, 'api.yml');
+    const validateResponses = !!(
+      process.env.OPENAPI_ENABLE_RESPONSE_VALIDATION &&
+      process.env.OPENAPI_ENABLE_RESPONSE_VALIDATION.toLowerCase() === 'true'
+    );
+    app.use(process.env.OPENAPI_SPEC || '/spec', express.static(apiSpec));
+    app.use(OpenApiValidator.middleware({
+      apiSpec,
+      validateResponses,
+      ignorePaths: /.*\/spec(\/|$)/,
+    }));
+    <% } %>
   }
 
   router(routes: (app: Application) => void): ExpressServer {
+    <% if (specification === 'openapi_3') { %>
+    routes(app);
+    app.use(errorHandler);
+    return this
+    <% } else { %>
     this.routes = routes;
     return this;
+    <% } %>
   }
 
   listen(port: number): Application {
@@ -38,14 +57,16 @@ export default class ExpressServer {
         process.env.NODE_ENV || 'development'
       } @: ${os.hostname()} on port: ${p}}`
     );
-
+    <% if (specification === 'openapi_3') { %>
+    http.createServer(app).listen(port, welcome(port));
+    <% } else { %>
     installValidator(app, this.routes).then(() => {
       http.createServer(app).listen(port, welcome(port));
     }).catch(e => {
       l.error(e);
-      exit(1)
+      process.exit(1)
     });
-
+    <% } %>
     return app;
   }
 }
