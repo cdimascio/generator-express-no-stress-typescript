@@ -1,0 +1,32 @@
+## <small>10.1.1 (2020-11-07)</small>
+
+* chore: increment patch version ([143eaf6](https://github.com/cdimascio/generator-express-no-stress-typescript/commit/143eaf6))
+* fix: add node 15 support and update deps ([ea0ba29](https://github.com/cdimascio/generator-express-no-stress-typescript/commit/ea0ba29))
+* increment minor version ([61c9b56](https://github.com/cdimascio/generator-express-no-stress-typescript/commit/61c9b56))
+* increment patch version ([fe6422d](https://github.com/cdimascio/generator-express-no-stress-typescript/commit/fe6422d))
+* Update Readme.md ([b05d935](https://github.com/cdimascio/generator-express-no-stress-typescript/commit/b05d935))
+* Update README.md ([c59bc6d](https://github.com/cdimascio/generator-express-no-stress-typescript/commit/c59bc6d))
+* Update README.md ([746b89b](https://github.com/cdimascio/generator-express-no-stress-typescript/commit/746b89b))
+* Update README.md ([6b9a0cf](https://github.com/cdimascio/generator-express-no-stress-typescript/commit/6b9a0cf))
+* Update README.md ([6c4f085](https://github.com/cdimascio/generator-express-no-stress-typescript/commit/6c4f085))
+* upgrade eov ([1ddf9e3](https://github.com/cdimascio/generator-express-no-stress-typescript/commit/1ddf9e3))
+* use v4.2 openapi validator and upgrade deps ([db13b83](https://github.com/cdimascio/generator-express-no-stress-typescript/commit/db13b83))
+* docs: update .all-contributorsrc [skip ci] ([4d15662](https://github.com/cdimascio/generator-express-no-stress-typescript/commit/4d15662))
+* docs: update .all-contributorsrc [skip ci] ([8d98c8b](https://github.com/cdimascio/generator-express-no-stress-typescript/commit/8d98c8b))
+* docs: update .all-contributorsrc [skip ci] ([249fc72](https://github.com/cdimascio/generator-express-no-stress-typescript/commit/249fc72))
+* docs: update .all-contributorsrc [skip ci] ([ab3f19a](https://github.com/cdimascio/generator-express-no-stress-typescript/commit/ab3f19a))
+* docs: update .all-contributorsrc [skip ci] ([3928614](https://github.com/cdimascio/generator-express-no-stress-typescript/commit/3928614))
+* docs: update .all-contributorsrc [skip ci] ([822f726](https://github.com/cdimascio/generator-express-no-stress-typescript/commit/822f726))
+* docs: update .all-contributorsrc [skip ci] ([fc6d0f8](https://github.com/cdimascio/generator-express-no-stress-typescript/commit/fc6d0f8))
+* docs: update .all-contributorsrc [skip ci] ([77d9e3b](https://github.com/cdimascio/generator-express-no-stress-typescript/commit/77d9e3b))
+* docs: update README.md [skip ci] ([9e8559c](https://github.com/cdimascio/generator-express-no-stress-typescript/commit/9e8559c))
+* docs: update README.md [skip ci] ([d8686be](https://github.com/cdimascio/generator-express-no-stress-typescript/commit/d8686be))
+* docs: update README.md [skip ci] ([1606512](https://github.com/cdimascio/generator-express-no-stress-typescript/commit/1606512))
+* docs: update README.md [skip ci] ([47e9225](https://github.com/cdimascio/generator-express-no-stress-typescript/commit/47e9225))
+* docs: update README.md [skip ci] ([96c94e7](https://github.com/cdimascio/generator-express-no-stress-typescript/commit/96c94e7))
+* docs: update README.md [skip ci] ([0987aad](https://github.com/cdimascio/generator-express-no-stress-typescript/commit/0987aad))
+* docs: update README.md [skip ci] ([5c05595](https://github.com/cdimascio/generator-express-no-stress-typescript/commit/5c05595))
+* docs: update README.md [skip ci] ([b564724](https://github.com/cdimascio/generator-express-no-stress-typescript/commit/b564724))
+
+
+
