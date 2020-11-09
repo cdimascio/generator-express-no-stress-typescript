@@ -1,3 +1,10 @@
+## <small>10.1.2 (2020-11-09)</small>
+
+* chore: increment patch version ([07191fd](https://github.com/cdimascio/generator-express-no-stress-typescript/commit/07191fd))
+* update express-openapi-validator ([35c16c1](https://github.com/cdimascio/generator-express-no-stress-typescript/commit/35c16c1))
+
+
+
 ## <small>10.1.1 (2020-11-07)</small>
 
 * chore: increment patch version ([143eaf6](https://github.com/cdimascio/generator-express-no-stress-typescript/commit/143eaf6))
