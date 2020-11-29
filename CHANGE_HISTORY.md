@@ -1,3 +1,14 @@
+## <small>10.1.4 (2020-11-29)</small>
+
+* chore: increment patch version ([3fd1a81](https://github.com/cdimascio/generator-express-no-stress-typescript/commit/3fd1a81))
+* chore: increment patch version ([4cd80dc](https://github.com/cdimascio/generator-express-no-stress-typescript/commit/4cd80dc))
+* docs: update .all-contributorsrc [skip ci] ([b77d33b](https://github.com/cdimascio/generator-express-no-stress-typescript/commit/b77d33b))
+* docs: update README.md [skip ci] ([cc43303](https://github.com/cdimascio/generator-express-no-stress-typescript/commit/cc43303))
+* import json files directly ([b53f483](https://github.com/cdimascio/generator-express-no-stress-typescript/commit/b53f483))
+* upgrade validator ([66c27b7](https://github.com/cdimascio/generator-express-no-stress-typescript/commit/66c27b7))
+
+
+
 ## <small>10.1.2 (2020-11-09)</small>
 
 * chore: increment patch version ([07191fd](https://github.com/cdimascio/generator-express-no-stress-typescript/commit/07191fd))
