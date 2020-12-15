@@ -1,5 +1,6 @@
 import ExamplesService from '../../services/examples.service';
 import { Request, Response } from 'express';
+import UserModel from '../../../db/schemas/user.schema';
 
 export class Controller {
   all(req: Request, res: Response): void {
@@ -22,5 +23,16 @@ export class Controller {
         .json(r),
     );
   }
+
+  async createUser(req: Request, res: Response) {
+    await UserModel.create(req.body);
+    return res.json();
+  }
+
+  async findUser(req: Request, res: Response) {
+    const user =  await UserModel.findById(req.params.id);
+    return res.json(user);
+  }
+
 }
 export default new Controller();

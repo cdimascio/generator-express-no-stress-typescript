@@ -5,6 +5,7 @@ import http from 'http';
 import os from 'os';
 import cookieParser from 'cookie-parser';
 import l from './logger';
+import connectMongoDB from '../db';
 <% if (specification === 'openapi_3') { %>
 import errorHandler from '../api/middlewares/error.handler'
 import * as OpenApiValidator from 'express-openapi-validator';
@@ -13,6 +14,8 @@ import installValidator from './swagger';
 <% } %>
 
 const app = express();
+
+connectMongoDB();
 
 export default class ExpressServer {
   private routes: (app: Application) => void;
