@@ -1,3 +1,10 @@
+## <small>10.1.5 (2020-12-19)</small>
+
+* chore: increment patch version ([ae7abc7](https://github.com/cdimascio/generator-express-no-stress-typescript/commit/ae7abc7))
+* update deps ([3cceef9](https://github.com/cdimascio/generator-express-no-stress-typescript/commit/3cceef9))
+
+
+
 ## <small>10.1.4 (2020-11-29)</small>
 
 * chore: increment patch version ([3fd1a81](https://github.com/cdimascio/generator-express-no-stress-typescript/commit/3fd1a81))
