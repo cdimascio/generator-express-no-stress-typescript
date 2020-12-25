@@ -1,3 +1,11 @@
+## <small>10.1.6 (2020-12-25)</small>
+
+* chore: increment patch version ([672eef8](https://github.com/cdimascio/generator-express-no-stress-typescript/commit/672eef8))
+* fix: remove appPath ([c6f3375](https://github.com/cdimascio/generator-express-no-stress-typescript/commit/c6f3375))
+* feat: update validator ([f0728fa](https://github.com/cdimascio/generator-express-no-stress-typescript/commit/f0728fa))
+
+
+
 ## <small>10.1.5 (2020-12-19)</small>
 
 * chore: increment patch version ([ae7abc7](https://github.com/cdimascio/generator-express-no-stress-typescript/commit/ae7abc7))
