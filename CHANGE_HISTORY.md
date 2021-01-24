@@ -1,3 +1,12 @@
+## 11.0.0 (2021-01-24)
+
+* chore: increment patch version ([65ca756](https://github.com/cdimascio/generator-express-no-stress-typescript/commit/65ca756))
+* chore: update deps ([735ea3b](https://github.com/cdimascio/generator-express-no-stress-typescript/commit/735ea3b))
+* chore: v11.0.0 ([a53db7e](https://github.com/cdimascio/generator-express-no-stress-typescript/commit/a53db7e))
+* v11: strict typing ([192597a](https://github.com/cdimascio/generator-express-no-stress-typescript/commit/192597a))
+
+
+
 ## <small>10.1.6 (2020-12-25)</small>
 
 * chore: increment patch version ([672eef8](https://github.com/cdimascio/generator-express-no-stress-typescript/commit/672eef8))
