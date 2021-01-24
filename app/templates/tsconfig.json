@@ -1,15 +1,27 @@
 {
   "compileOnSave": false,
   "compilerOptions": {
-    "target": "es6",
+    "target":"ES2018",
     "module": "commonjs",
+    "lib": ["es2020"],
+    "declaration": true,
+    "strict": true,
+    "noImplicitAny": true,
     "esModuleInterop": true,
-    "sourceMap": true,
     "moduleResolution": "node",
+    "strictNullChecks": true,
+    "noImplicitThis": true,
+    "alwaysStrict": true,
+    "noUnusedLocals": false,
+    "noUnusedParameters": true,
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": false,
+    "sourceMap": true,
+    "strictPropertyInitialization":false,
+    "resolveJsonModule": true,
     "outDir": "dist",
-    "typeRoots": ["node_modules/@types"],
-    "resolveJsonModule": true
+    "typeRoots": ["./node_modules/@types"]
   },
-  "include": ["typings.d.ts", "server/**/*.ts"],
+  "include": ["server/**/*.ts"],
   "exclude": ["node_modules"]
 }

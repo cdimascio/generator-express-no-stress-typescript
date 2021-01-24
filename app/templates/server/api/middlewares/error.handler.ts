@@ -1,13 +1,11 @@
 import { Request, Response, NextFunction } from 'express';
 
 <% if (specification === 'openapi_3') { %>
-// eslint-disable-next-line no-unused-vars, no-shadow
 export default function errorHandler(
-  err,
-  req: Request,
+  err: any,
+  _req: Request,
   res: Response,
-  // eslint-disable-next-line @typescript-eslint/no-unused-vars
-  next: NextFunction
+  _next: NextFunction
 ): void {
   const errors = err.errors || [{ message: err.message }];
   res.status(err.status || 500).json({ errors });
