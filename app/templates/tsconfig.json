@@ -16,6 +16,7 @@
     "noUnusedParameters": true,
     "noImplicitReturns": true,
     "noFallthroughCasesInSwitch": false,
+    "skipLibCheck": true,
     "sourceMap": true,
     "strictPropertyInitialization":false,
     "resolveJsonModule": true,
