@@ -19,7 +19,7 @@
     "dotenv": "^16.0.0",
     "express": "^4.17.3",
     <% if (specification === 'openapi_3') { %>
-    "express-openapi-validator": "^4.13.6",
+    "express-openapi-validator": "^4.13.8",
     <% } else { %>
     "swagger-express-middleware": "^4.0.2",
     <% } %>
